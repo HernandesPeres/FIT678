@@ -2,10 +2,15 @@
 title: "Chi-square Test"
 author: "Hernandes Peres"
 date: "`r Sys.Date()`"
-output: html_document
+output: github_document
 ---
 
 ### Cleaning and loading packages
+
+```{r message=FALSE, warning=FALSE, paged.print=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE, error = FALSE)
+```
+
 
 ```{r message=FALSE, warning=FALSE, paged.print=FALSE}
 remove(list = ls())
@@ -184,3 +189,5 @@ Applying Bonferroni correction:
 ```{r}
 table(p.value > 0.05/M)
 ```
+
+
