@@ -1,5 +1,5 @@
 ---
-title: "Aula1 - FIT678"
+title: "Chi-square Test"
 author: "Hernandes Peres"
 date: "`r Sys.Date()`"
 output: html_document
@@ -115,7 +115,7 @@ dim(mouse_df)
 
 ### Makers info
 
-So, using **ggplot*$** and **dplyr**, both packages from the **tidyverse**, we can organize and plot a nicer chart to verify the markers segregation distribution.
+So, using \*\*ggplot\*\$ **and** dplyr**, both packages from the** tidyverse\*\*, we can organize and plot a nicer chart to verify the markers segregation distribution.
 
 ```{r}
 markers <- mouse_df[,2:15]
