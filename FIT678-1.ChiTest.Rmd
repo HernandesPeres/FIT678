@@ -2,7 +2,14 @@
 title: "Chi-square Test"
 author: "Hernandes Peres"
 date: "`r Sys.Date()`"
-output: github_document
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    number_sections: true
+    code_folding: "show"
+    highlight: "tango"
+    df_print: "tibble"
 ---
 
 ### Cleaning and loading packages
@@ -120,7 +127,7 @@ dim(mouse_df)
 
 ### Makers info
 
-So, using \*\*ggplot\*\$ **and** dplyr**, both packages from the** tidyverse\*\*, we can organize and plot a nicer chart to verify the markers segregation distribution.
+So, using **ggplot** and **dplyr**, both packages from the **tidyverse**, we can organize and plot a nicer chart to verify the markers segregation distribution.
 
 ```{r}
 markers <- mouse_df[,2:15]
